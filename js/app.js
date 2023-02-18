@@ -94,3 +94,19 @@ document.querySelector('.random2').addEventListener('mouseenter', function () {
     const colors = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
     this.style.background = colors;
 })
+document.querySelector('.random3').addEventListener('mouseenter', function () {
+    const colors = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
+    this.style.background = colors;
+})
+document.querySelector('.random4').addEventListener('mouseenter', function () {
+    const colors = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
+    this.style.background = colors;
+})
+document.querySelector('.random5').addEventListener('mouseenter', function () {
+    const colors = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
+    this.style.background = colors;
+})
+document.querySelector('.random6').addEventListener('mouseenter', function () {
+    const colors = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
+    this.style.background = colors;
+})
