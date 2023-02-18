@@ -11,14 +11,8 @@ document.getElementById('triangle-btn').addEventListener('click', function () {
     }
     console.log(triangleResult);
 
-    const resultDashboard = document.getElementById('calculation-dashboard');
-    const p = document.createElement('p')
-    p.innerHTML = serialNumber()+". Traingle" + "  " + triangleResult.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
-    resultDashboard.appendChild(p);
-
-
     //call result function
-    // setTextElementValueById(elementId, triangleResult);
+    setTextElementValueById('. Triangle', triangleResult);
 });
 
 //rectangle events
@@ -31,13 +25,9 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
         return;
     }
 
-    const resultDashboard = document.getElementById('calculation-dashboard');
-    const p = document.createElement('p')
-    p.innerHTML = serialNumber()+". Rectangle" + "  " + rectangleInput.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
-    resultDashboard.appendChild(p);
 
     //call result function
-    // setTextElementValueById('rectangle-calculation', rectangleInput);
+    setTextElementValueById('. Rectangle', rectangleInput);
 });
 //Parallelogram events
 document.getElementById('parallelogram-btn').addEventListener('click', function () {
@@ -48,13 +38,8 @@ document.getElementById('parallelogram-btn').addEventListener('click', function 
         return;
     }
 
-    const resultDashboard = document.getElementById('calculation-dashboard');
-    const p = document.createElement('p')
-    p.innerHTML = serialNumber()+". Parallelogram" + "  " + parallelogramInput.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
-    resultDashboard.appendChild(p);
-
     //call result function
-    // setTextElementValueById('parallelogram-calculation', parallelogramInput);
+    setTextElementValueById('. Parallelogram', parallelogramInput);
 });
 
 //Rhombus events
@@ -67,13 +52,9 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
         return;
     }
 
-    const resultDashboard = document.getElementById('calculation-dashboard');
-    const p = document.createElement('p')
-    p.innerHTML = serialNumber()+". Rhombus" + "  " + rhombusResult.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
-    resultDashboard.appendChild(p);
 
     //call result function
-    // setTextElementValueById('rhombus-calculation', rhombusResult);
+    setTextElementValueById('. Rhombus', rhombusResult);
 });
 
 //Pentagon events
@@ -86,13 +67,8 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
         return;
     }
 
-    const resultDashboard = document.getElementById('calculation-dashboard');
-    const p = document.createElement('p')
-    p.innerHTML = serialNumber()+". Pentagon" + "  " + pentagonResult.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
-    resultDashboard.appendChild(p);
-
     //call result function
-    // setTextElementValueById('pentagon-calculation', pentagonResult);
+    setTextElementValueById('. Pentagon', pentagonResult);
 });
 //Ellipse events
 document.getElementById('ellipse-btn').addEventListener('click', function () {
@@ -104,13 +80,8 @@ document.getElementById('ellipse-btn').addEventListener('click', function () {
         return;
     }
 
-    const resultDashboard = document.getElementById('calculation-dashboard');
-    const p = document.createElement('p')
-    p.innerHTML = serialNumber()+". Ellipse" + "  " + ellipseResult.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
-    resultDashboard.appendChild(p);
-
     //call result function
-    // setTextElementValueById('ellipse-calculation', ellipseResult);
+    setTextElementValueById('. Ellipse', ellipseResult);
 });
 
 //random color

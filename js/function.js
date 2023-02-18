@@ -31,11 +31,11 @@ function serialNumber(){
     number++;
     return number;
 }
-
-// function setTextElementValueById(elementId, newValue) {
-//     const textElement = document.getElementById(elementId);
-    
-//     // textElement.innerText =newValue;
-//     textElement.innerHTML = elementId +"  " +newValue.toFixed(2) +"<span>cm <sup>2</sup></span>" +'   '+' '+ "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convet to m<sup>2</sup></span>";
-// }
+//set text function
+function setTextElementValueById(NameOfmasurement, results) {
+    const resultDashboard = document.getElementById('calculation-dashboard');
+    const p = document.createElement('p')
+    p.innerHTML = serialNumber()+NameOfmasurement + "  " + results.toFixed(2) + "<span>cm <sup>2</sup></span>" + '   ' + ' ' + "<span style='color: white; background-color: #0B5ED7; padding: 6px 8px; border-radius: 2px;' >Convert to m<sup>2</sup></span>";
+    resultDashboard.appendChild(p);
+}
 
