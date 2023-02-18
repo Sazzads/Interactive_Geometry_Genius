@@ -56,10 +56,10 @@
                 <div class="card-body">
                   <h4 class="card-title m-0 ">rectangle</h4>
                   <p class="fw-lighter m-0">Area(A)=w*i</p>
-                  <div class="d-inline-flex my-2"><input type="text" placeholder="w" class="w-75 "><span
-                      class="mx-1">cm</span><input type="text" placeholder="i" class="w-75"><span class="mx-1">cm</span>
+                  <div class="d-inline-flex my-2"><input id="rectangle-input1" type="text" placeholder="w" class="w-75 "><span
+                      class="mx-1">cm</span><input id="rectangle-input2" type="text" placeholder="i" class="w-75"><span class="mx-1">cm</span>
                   </div>
-                  <button type="button" class="btn btn-primary w-100 my-3">Calculate</button>
+                  <button id="rectangle-btn" type="button" class="btn btn-primary w-100 my-3">Calculate</button>
                 </div>
               </div>
             </div>
@@ -70,10 +70,10 @@
                 <div class="card-body">
                   <h4 class="card-title m-0 ">Parallelogram</h4>
                   <p class="fw-lighter m-0">Area(A)=b*h</p>
-                  <div class="d-inline-flex my-2"><input type="text" placeholder="b" class="w-75 "><span
-                      class="mx-1">cm</span><input type="text" placeholder="h" class="w-75"><span class="mx-1">cm</span>
+                  <div class="d-inline-flex my-2"><input id="parallelogram-input1" type="text" placeholder="b" class="w-75 "><span
+                      class="mx-1">cm</span><input id="parallelogram-input2" type="text" placeholder="h" class="w-75"><span class="mx-1">cm</span>
                   </div>
-                  <button type="button" class="btn btn-primary w-100 my-3">Calculate</button>
+                  <button id="parallelogram-btn" type="button" class="btn btn-primary w-100 my-3">Calculate</button>
                 </div>
               </div>
             </div>
@@ -84,11 +84,11 @@
                 <div class="card-body">
                   <h4 class="card-title m-0 ">Rhombus</h4>
                   <p class="fw-lighter m-0">Area(A)=0.5*d1*d2</p>
-                  <div class="d-inline-flex my-2"><input type="text" placeholder="d1" class="w-75 "><span
-                      class="mx-1">cm</span><input type="text" placeholder="d2" class="w-75"><span
+                  <div class="d-inline-flex my-2"><input id="rhombus-input1" type="text" placeholder="d1" class="w-75 "><span
+                      class="mx-1">cm</span><input id="rhombus-input2" type="text" placeholder="d2" class="w-75"><span
                       class="mx-1">cm</span>
                   </div>
-                  <button type="button" class="btn btn-primary w-100 my-3 ">Calculate</button>
+                  <button id="rhombus-btn" type="button" class="btn btn-primary w-100 my-3 ">Calculate</button>
                 </div>
               </div>
             </div>
@@ -99,10 +99,10 @@
                 <div class="card-body">
                   <h4 class="card-title m-0 ">Pentagon</h4>
                   <p class="fw-lighter m-0">Area(A)=0.5*p*b</p>
-                  <div class="d-inline-flex my-2"><input type="text" placeholder="p" class="w-75 "><span
-                      class="mx-1">cm</span><input type="text" placeholder="b" class="w-75"><span class="mx-1">cm</span>
+                  <div class="d-inline-flex my-2"><input id="pentagon-input1" type="text" placeholder="p" class="w-75 "><span
+                      class="mx-1">cm</span><input id="pentagon-input2"  type="text" placeholder="b" class="w-75"><span class="mx-1">cm</span>
                   </div>
-                  <button type="button" class="btn btn-primary w-100 my-3">Calculate</button>
+                  <button id="pentagon-btn" type="button" class="btn btn-primary w-100 my-3">Calculate</button>
                 </div>
               </div>
             </div>
@@ -113,10 +113,10 @@
                 <div class="card-body">
                   <h4 class="card-title m-0 ">Ellipse</h4>
                   <p class="fw-lighter m-0">Area(A)=π*a*b</p>
-                  <div class="d-inline-flex my-2"><input type="text" placeholder="a" class="w-75 "><span
-                      class="mx-1">cm</span><input type="text" placeholder="b" class="w-75"><span class="mx-1">cm</span>
+                  <div class="d-inline-flex my-2"><input id="ellipse-input1" type="text" placeholder="a" class="w-75 "><span
+                      class="mx-1">cm</span><input id="ellipse-input2" type="text" placeholder="b" class="w-75"><span class="mx-1">cm</span>
                   </div>
-                  <button type="button" class="btn btn-primary w-100 my-3">Calculate</button>
+                  <button id="ellipse-btn" type="button" class="btn btn-primary w-100 my-3">Calculate</button>
 
                 </div>
               </div>
@@ -140,7 +140,7 @@
                 1.Triangle 
               </div>
               <div class="col-3">
-                <span class="triangle-calculation">00</span>cm <sup>2</sup>
+                <span id="triangle-calculation">00</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -154,7 +154,7 @@
                 2.Rectangle 
               </div>
               <div class="col-3">
-                <span>0</span>cm <sup>2</sup>
+                <span id="rectangle-calculation">00</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -168,7 +168,21 @@
                 3.Parallelogram 
               </div>
               <div class="col-3">
-                <span>0</span>cm <sup>2</sup>
+                <span id="parallelogram-calculation">0</span>cm <sup>2</sup>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
+              </div>
+            </div>
+          </div>
+          <!-- rhombus calculation  -->
+          <div class="container text-center mt-3">
+            <div class="row ">
+              <div class="col-3 text-start">
+                4.Rhombus 
+              </div>
+              <div class="col-3">
+                <span id="rhombus-calculation">00</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -182,7 +196,7 @@
                 5.Pentagon 
               </div>
               <div class="col-3">
-                <span>0</span>cm <sup>2</sup>
+                <span id="pentagon-calculation">0</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -196,10 +210,10 @@
                 6.Ellipse 
               </div>
               <div class="col-3">
-                <span>0</span>cm <sup>2</sup>
+                <span id="ellipse-calculation">0</span >cm <sup>2</sup>
               </div>
               <div class="col-6">
-                <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
+                <button  class="btn btn-primary ">Covert to m<sup>2</sup></button>
               </div>
             </div>
           </div>
@@ -218,7 +232,7 @@
   </footer>
   <!-- javascript link start -->
   <script src="js/function.js"></script>
-  <script src="js/triangle.js"></script>
+  <script src="js/app.js"></script>
 
   <script src="js/blog.js"></script>
   <!-- javascript link end -->
