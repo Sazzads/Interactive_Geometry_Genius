@@ -16,9 +16,39 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <h1>Question</h1>
+    <h1 class="text-center">Question</h1>
   </header>
-  <main>
+  <main class="container">
+    <h3 class="text-danger">1. What is DOM and what is the purpose of DOM?</h3>
+    <p><i><b>Answer:</b> </i> Web documents include a programming interface called the Document Object Model (DOM).
+      Since that software may alter the document's structure, appearance, and content, it serves as a representation of
+      the page.</p>
+    <p>A website document's elements can be added, changed, or removed using this programming interface. DOM
+      manipulation is the process of adding, deleting, and changing webpage components using JavaScript. In web
+      development, it occurs frequently.</p>
+
+    <h3 class="text-danger">2. How will you select HTML elements using DOM? Name the DOM methods.</h3>
+    <p><i><b>Answer:</b>The querySelectorAll() function may be used to identify all HTML elements that match a specific
+        CSS selector (id, class names, types, attributes, attribute values, and so on). </p>
+    <p>dom methods:</p>
+    <ul>
+      <li>getElementsByTagName()</li>
+      <li>getElementsByClassName()</li>
+      <li>getElementById()</li>
+      <li>querySelector()</li>
+      <li>querySelectorAll()</li>
+    </ul>
+    <h3 class="text-danger">3. What is event bubble? </h3>
+    <p><i><b>Answer:</b> Event bubbling is a word you may have come across when researching JavaScript. It refers to the
+        order in which event handlers are invoked when one element is nested inside another and both have assigned a
+        listener for the same action. </p>
+    <h3 class="text-danger">4. What is a callback function and why will you use it? </h3>
+    <p><i><b>Answer:</b> A callback function is a function that is supplied as an input to another function and then
+        executed inside the outer function to perform some type of procedure or action.</p>
+    <p>A callback function ensures that a function does not execute before a job is done, but instead runs immediately
+      only after task has been accomplished. It aids in the development of asynchronous JavaScript code and protects us
+      from issues and errors.</p>
+
 
   </main>
   <footer>
@@ -27,11 +57,11 @@
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>

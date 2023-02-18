@@ -1,4 +1,4 @@
-
+//
 function getinputFieldValueById(inputField1Id1, inputField2Id2) {
 
 
