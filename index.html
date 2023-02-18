@@ -22,7 +22,7 @@
           <a class="navbar-brand d-block fw-bold p-0">Interactive</a>
           <a class="navbar-brand d-block fw-lighter p-0">Geometry Genius</a>
         </div>
-        <button class="btn btn-outline-success bg-primary text-white px-5" type="submit">Blog</button>
+        <button id="blog-btn" class="btn btn-outline-success bg-primary text-white px-5" type="submit">Blog</button>
 
       </div>
     </nav>
@@ -42,10 +42,10 @@
                 <div class="card-body">
                   <h4 class="card-title m-0 ">Triangle</h4>
                   <p class="fw-lighter m-0">Area(A)=0.5*b*h</p>
-                  <div class="d-inline-flex my-2"><input type="text" placeholder="b" class="w-75 "><span
-                      class="mx-1">cm</span><input type="text" placeholder="h" class="w-75"><span class="mx-1">cm</span>
+                  <div class="d-inline-flex my-2"><input id="triangle-input1" type="text" placeholder="b" class="w-75 "><span
+                      class="mx-1">cm</span><input id="triangle-input2" type="text" placeholder="h" class="w-75"><span class="mx-1">cm</span>
                   </div>
-                  <button type="button" class="btn btn-primary w-100 my-3">Calculate</button>
+                  <button id="triangle-btn" type="button" class="btn btn-primary w-100 my-3">Calculate</button>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@
                 1.Triangle 
               </div>
               <div class="col-3">
-                <span>12</span>cm <sup>2</sup>
+                <span class="triangle-calculation">00</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -154,7 +154,7 @@
                 2.Rectangle 
               </div>
               <div class="col-3">
-                <span>12</span>cm <sup>2</sup>
+                <span>0</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -168,7 +168,7 @@
                 3.Parallelogram 
               </div>
               <div class="col-3">
-                <span>12</span>cm <sup>2</sup>
+                <span>0</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -182,7 +182,7 @@
                 5.Pentagon 
               </div>
               <div class="col-3">
-                <span>12</span>cm <sup>2</sup>
+                <span>0</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -196,7 +196,7 @@
                 6.Ellipse 
               </div>
               <div class="col-3">
-                <span>12</span>cm <sup>2</sup>
+                <span>0</span>cm <sup>2</sup>
               </div>
               <div class="col-6">
                 <button class="btn btn-primary ">Covert to m<sup>2</sup></button>
@@ -216,6 +216,12 @@
   <footer>
     <!-- place footer here -->
   </footer>
+  <!-- javascript link start -->
+  <script src="js/function.js"></script>
+  <script src="js/triangle.js"></script>
+
+  <script src="js/blog.js"></script>
+  <!-- javascript link end -->
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
