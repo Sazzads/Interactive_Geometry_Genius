@@ -1,6 +1,4 @@
-
 //triangle events
-
 document.getElementById('triangle-btn').addEventListener('click', function () {
     //call input value function
     const triangleInput = getinputFieldValueById('triangle-input1', 'triangle-input2');
@@ -26,9 +24,10 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
     }
 
 
-    //call result function
+    //call setTextElementValue function
     setTextElementValueById('. Rectangle', rectangleInput);
 });
+
 //Parallelogram events
 document.getElementById('parallelogram-btn').addEventListener('click', function () {
     //call input value function
@@ -38,7 +37,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function 
         return;
     }
 
-    //call result function
+    //call setTextElementValue function
     setTextElementValueById('. Parallelogram', parallelogramInput);
 });
 
@@ -53,7 +52,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
     }
 
 
-    //call result function
+    //call setTextElementValue function
     setTextElementValueById('. Rhombus', rhombusResult);
 });
 
@@ -67,9 +66,10 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
         return;
     }
 
-    //call result function
+    //call setTextElementValue function
     setTextElementValueById('. Pentagon', pentagonResult);
 });
+
 //Ellipse events
 document.getElementById('ellipse-btn').addEventListener('click', function () {
     //call input value function
@@ -80,11 +80,11 @@ document.getElementById('ellipse-btn').addEventListener('click', function () {
         return;
     }
 
-    //call result function
+    //call setTextElementValue function
     setTextElementValueById('. Ellipse', ellipseResult);
 });
 
-//random color
+//random color add
 
 document.querySelector('.random').addEventListener('mouseenter', function () {
     const colors = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
